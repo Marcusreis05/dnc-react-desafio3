@@ -13,5 +13,5 @@ Esta é a resolução do desafio 3 do dnc scholl usando react + vite => Lista de
 
 ## Demonstração
 
-Link do host => https://luminous-pasca-d30f9e.netlify.app
+Link do host => https://desafio-3-dnc-react.netlify.app
 
