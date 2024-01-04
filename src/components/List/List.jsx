@@ -95,6 +95,7 @@ const TodoList = () => {
 
                   {mostrarPopupEditar && (
                     <Popup
+                      titulo={'editar'}
                       texto={`Você tem certeza de que deseja editar "${todo}"?`}
                       onSim={handleSimEditar}
                       onNao={handleNaoEditar}
@@ -109,6 +110,7 @@ const TodoList = () => {
 
                   {mostrarPopupDeletar && (
                     <Popup
+                      titulo={'exluir'}
                       texto={`Você tem certeza de que deseja excluir "${todo}"?`}
                       onSim={handleSimDeletar}
                       onNao={handleNaoDeletar}
