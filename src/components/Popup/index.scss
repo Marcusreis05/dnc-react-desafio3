@@ -8,6 +8,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    word-wrap:break-word;
+
+    
 
     &__popup-ctn {
       background-color: #FFF;
@@ -15,6 +18,7 @@
       text-align: center;
       width: 1000px;
       height: 700px;
+      padding: 0px 30px 0px 30px;
     }
 
     &__btn-no{
@@ -24,10 +28,12 @@
       border-radius: 10px;
       background: #0C70F2;
       font-size: 20px;
+      transition: 0.3s;
     }
 
     &__btn-no:hover{
-      box-shadow: 3px 5px 20px black;
+      box-shadow: 5px 5px 10px rgb(119, 119, 119);
+      background-color: #408bee;
     }
     
 
@@ -36,20 +42,24 @@
       padding: 20px 70px;
       cursor: pointer;
       border-radius: 10px;
-      border: 1px solid #000;
-      background: #FFF;
+      background: #dfdfdf;
       color: #000;
       font-size: 20px;
+      transition: 0.3s;
     }
 
     &__btn-yes:hover{
-      box-shadow: 1px 3px 20px black;
+      box-shadow: 5px 5px 10px rgb(138, 138, 138);
+      background-color: #eeeeee;
     }
 
     p{
       color: #000;
       margin-bottom: 50px;
       font-size: 25px;
+      overflow: auto;
+      text-overflow: ellipsis;
+      height: 250px;
     }
 
     h1{
