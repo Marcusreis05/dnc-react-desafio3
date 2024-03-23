@@ -74,6 +74,10 @@ const TodoList = () => {
         <h2>Opções</h2>
       </div>
 
+      <input ref={inputRef} type="text" placeholder="Nova tarefa..." value={newTodo} onChange={(e) => setNewTodo(e.target.value)} className='list__add'/>
+
+      <button className='list__addListButton' onClick={addTodo}>{editingIndex !== null ? <img src={add} width='20px'></img> : <img src={add} width='20px'></img>}</button>
+
       <ul className='list__todo-list'>
 
         {todos.map((todo, index) => (
@@ -127,9 +131,7 @@ const TodoList = () => {
 
       </ul>
       
-      <input ref={inputRef} type="text" placeholder="Nova tarefa..." value={newTodo} onChange={(e) => setNewTodo(e.target.value)} className='list__add'/>
-
-      <button className='list__addListButton' onClick={addTodo}>{editingIndex !== null ? <img src={add} width='20px'></img> : <img src={add} width='20px'></img>}</button>
+      
     
     </div>
   );

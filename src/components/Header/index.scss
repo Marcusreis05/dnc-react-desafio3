@@ -9,6 +9,11 @@
     height: 80px;
     display: flex;
 
+    img{
+        position: relative;
+        left: 30%;
+    }
+
     &__title1{
         position: relative;
         left: 70px;
