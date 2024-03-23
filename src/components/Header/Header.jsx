@@ -1,6 +1,7 @@
 import React from 'react'
 import "./index.scss"
 import logo from '../../assets/icons/logo.svg'
+
 const Header = () => {
   return (
     <div className='header' id='home'>

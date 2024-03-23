@@ -12,7 +12,6 @@ button{
 }
 
 .list{
-
     text-align: center;
     margin-top: 30px;
     margin-bottom: 10%;
@@ -26,7 +25,6 @@ button{
     }
 
     &__info{
-
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -58,10 +56,9 @@ button{
         margin-right: 5px;
         font-size: 20px;
         color: #ffffff;
-      }
+    }
 
     &__todo-list{
-
         font-size: 17px;
         list-style: none;
         width: 60%; 
