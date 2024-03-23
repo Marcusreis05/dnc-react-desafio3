@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
-import edit from '../../assets/editar.svg';
-import delet from '../../assets/deletar.svg';
-import add from '../../assets/adicionar.svg';
+import edit from '../../assets/icons/editar.svg';
+import delet from '../../assets/icons/deletar.svg';
+import add from '../../assets/icons/adicionar.svg';
 import Popup from '../Popup/Popup';
 import "./index.scss";
 
@@ -91,7 +91,7 @@ const TodoList = () => {
 
                 <div >
 
-                  <button onClick={() => editTodo(index)}><img src={edit}></img></button>
+                  <button className='list__btn-edt' onClick={() => editTodo(index)}><img src={edit}></img></button>
 
                   {mostrarPopupEditar && (
                     <Popup
@@ -106,7 +106,7 @@ const TodoList = () => {
                 
                 <div>
 
-                  <button onClick={() => {setItemIndexAcao(index); setMostrarPopupDeletar(true);}}><img src={delet}></img></button>
+                  <button className='list__btn-del' onClick={() => {setItemIndexAcao(index); setMostrarPopupDeletar(true);}}><img src={delet}></img></button>
 
                   {mostrarPopupDeletar && (
                     <Popup
@@ -129,7 +129,7 @@ const TodoList = () => {
       
       <input ref={inputRef} type="text" placeholder="Nova tarefa..." value={newTodo} onChange={(e) => setNewTodo(e.target.value)} className='list__add'/>
 
-      <button onClick={addTodo}>{editingIndex !== null ? <img src={add} width='20px'></img> : <img src={add} width='20px'></img>}</button>
+      <button className='list__addListButton' onClick={addTodo}>{editingIndex !== null ? <img src={add} width='20px'></img> : <img src={add} width='20px'></img>}</button>
     
     </div>
   );
